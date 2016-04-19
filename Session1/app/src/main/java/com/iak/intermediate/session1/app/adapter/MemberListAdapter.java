@@ -55,17 +55,14 @@ public class MemberListAdapter extends RecyclerView.Adapter<MemberListAdapter.My
         final long identity = System.currentTimeMillis();
         holder.identity = identity;
 
-        if (member != null){
-
-            if (member.getGeneral_info().getPhoto().length() != 0){
-                Picasso.with(context).
-                        load(member.getGeneral_info().getPhoto()).
-                        into(holder.img_member);
-            }
-
-            holder.txt_member_name.setText(member.getGeneral_info().getName());
-            holder.txt_member_address.setText(member.getGeneral_info().getAddress());
+        if (member.getGeneral_info().getPhoto().length() != 0){
+            Picasso.with(context).
+                    load(member.getGeneral_info().getPhoto()).
+                    into(holder.img_member);
         }
+
+        holder.txt_member_name.setText(member.getGeneral_info().getName());
+        holder.txt_member_address.setText(member.getGeneral_info().getAddress());
 
     }
 

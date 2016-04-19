@@ -10,7 +10,7 @@ public class MemberGeneralInfo implements Serializable{
 
     private String name;
     private String palce_born;
-    private Date birth_date;
+    private String birth_date;
     private String address;
     private String status;
     private String email;
@@ -27,7 +27,7 @@ public class MemberGeneralInfo implements Serializable{
         return palce_born;
     }
 
-    public Date getBirth_date() {
+    public String getBirth_date() {
         return birth_date;
     }
 
