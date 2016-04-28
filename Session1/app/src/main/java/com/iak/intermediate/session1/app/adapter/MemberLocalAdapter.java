@@ -14,17 +14,18 @@ import android.widget.TextView;
 
 import com.iak.intermediate.session1.R;
 import com.iak.intermediate.session1.app.model.api.Member;
+import com.iak.intermediate.session1.app.model.local.MemberLocal;
 import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 
-public class MemberListAdapter extends RecyclerView.Adapter<MemberListAdapter.MyViewHolder> {
-    private ArrayList<Member> data;
+public class MemberLocalAdapter extends RecyclerView.Adapter<MemberLocalAdapter.MyViewHolder> {
+    private ArrayList<MemberLocal> data;
     private LayoutInflater inflater;
     private Context context;
     private AdapterView.OnItemClickListener onItemClickListener;
 
-    public MemberListAdapter(Context context) {
+    public MemberLocalAdapter(Context context) {
         this.context = context;
         inflater = LayoutInflater.from(context);
         this.data = new ArrayList<>();
@@ -34,7 +35,7 @@ public class MemberListAdapter extends RecyclerView.Adapter<MemberListAdapter.My
         this.onItemClickListener = onItemClickListener;
     }
 
-    public ArrayList<Member> getListMember() {
+    public ArrayList<MemberLocal> getListMember() {
         return data;
     }
 
@@ -48,20 +49,20 @@ public class MemberListAdapter extends RecyclerView.Adapter<MemberListAdapter.My
 
     @Override
     public void onBindViewHolder(final MyViewHolder holder, int position) {
-        final Member member = data.get(position);
+        final MemberLocal member = data.get(position);
         holder.position = position;
 
         final long identity = System.currentTimeMillis();
         holder.identity = identity;
 
-        if (member.getGeneral_info().getPhoto().length() != 0){
+        if (member.getPhoto().length() != 0){
             Picasso.with(context).
-                    load(member.getGeneral_info().getPhoto()).
+                    load(member.getPhoto()).
                     into(holder.img_member);
         }
 
-        holder.txt_member_name.setText(member.getGeneral_info().getName());
-        holder.txt_member_address.setText(member.getGeneral_info().getAddress());
+        holder.txt_member_name.setText(member.getName());
+        holder.txt_member_address.setText(member.getAddress());
 
     }
 

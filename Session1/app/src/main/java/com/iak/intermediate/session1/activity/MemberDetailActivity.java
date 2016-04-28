@@ -6,7 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
 
 import com.iak.intermediate.session1.R;
-import com.iak.intermediate.session1.app.model.Member;
+import com.iak.intermediate.session1.app.model.api.Member;
 
 /**
  * Created by aderifaldi on 09-Apr-16.

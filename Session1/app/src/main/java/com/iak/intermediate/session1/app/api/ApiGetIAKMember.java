@@ -11,7 +11,7 @@ import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
 import com.google.gson.JsonParser;
-import com.iak.intermediate.session1.app.model.ModelIAKIntermediate;
+import com.iak.intermediate.session1.app.model.api.ModelIAKIntermediate;
 import com.radyalabs.async.AsyncHttpResponseHandler;
 
 import org.apache.http.Header;

@@ -1,4 +1,4 @@
-package com.iak.intermediate.session1.app.model;
+package com.iak.intermediate.session1.app.model.api;
 
 import java.io.Serializable;
 import java.util.Date;
@@ -57,5 +57,45 @@ public class MemberGeneralInfo implements Serializable{
 
     public String getPhoto() {
         return photo;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setPalce_born(String palce_born) {
+        this.palce_born = palce_born;
+    }
+
+    public void setBirth_date(String birth_date) {
+        this.birth_date = birth_date;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public void setContact(String contact) {
+        this.contact = contact;
+    }
+
+    public void setFacebook(String facebook) {
+        this.facebook = facebook;
+    }
+
+    public void setTwitter(String twitter) {
+        this.twitter = twitter;
+    }
+
+    public void setPhoto(String photo) {
+        this.photo = photo;
     }
 }

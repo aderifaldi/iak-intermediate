@@ -1,4 +1,4 @@
-package com.iak.intermediate.session1.app.model;
+package com.iak.intermediate.session1.app.model.api;
 
 import java.io.Serializable;
 
@@ -16,5 +16,13 @@ public class Member implements Serializable {
 
     public MemberEducation[] getEducation() {
         return education;
+    }
+
+    public void setGeneral_info(MemberGeneralInfo general_info) {
+        this.general_info = general_info;
+    }
+
+    public void setEducation(MemberEducation[] education) {
+        this.education = education;
     }
 }

@@ -1,4 +1,4 @@
-package com.iak.intermediate.session1.app.model;
+package com.iak.intermediate.session1.app.model.api;
 
 import java.io.Serializable;
 
