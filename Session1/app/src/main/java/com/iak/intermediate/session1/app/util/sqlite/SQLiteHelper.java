@@ -24,7 +24,7 @@ public class SQLiteHelper extends SQLiteOpenHelper {
             + MEMBER_ID +" integer primary key autoincrement,"
             + MEMBER_NAME +" text,"
             + MEMBER_ADDRESS +" text,"
-            + MEMBER_PHOTO +" text," +
+            + MEMBER_PHOTO +" text " +
             ");";
 
     public SQLiteHelper(Context context) {
